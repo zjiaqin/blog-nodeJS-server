@@ -1,0 +1,40 @@
+{
+  "name": "koa-node",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node bin/www",
+    "dev": "nodemon bin/www",
+    "prd": "pm2 start bin/www",
+    "apidoc": "apidoc -i apiDesc/ -o apidoc/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-history-api-fallback": "^1.6.0",
+    "debug": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.7.0",
+    "koa-body": "^4.2.0",
+    "koa-convert": "^1.2.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.1",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "moment": "^2.24.0",
+    "mongoose": "^5.8.1",
+    "nodemailer": "^6.4.2",
+    "svg-captcha": "^1.4.0"
+  },
+  "devDependencies": {
+    "koa-send": "^5.0.1",
+    "nodemon": "^1.19.1"
+  },
+  "description": "此 blog-node 项目是基于 koa 搭建，采用了主流的前后端分离思想，提供符合 RESTful 风格的 API 接口",
+  "main": "app.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
